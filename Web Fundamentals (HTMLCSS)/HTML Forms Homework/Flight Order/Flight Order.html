@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+		
+		<header>Flight Order</header>
+		
+		<div class="from">
+		
+			<label for="city">From</label><br>
+			<select name="city">
+			  <option value="Value 1"selected="selected">enter a city</option>
+			  <option value="Value 2">Sofia</option>
+			  <option value="Value 3">Varna</option>
+			  <option value="Value 4">Burgas</option>
+			</select><br>
+			
+			<label for="dd">Departure Date</label><br>
+			<input type="text" id="dd" placeholder="09.06.2014" /><br>
+			
+			<label for="rd">Return Date</label><br>
+			<input type="text" id="rd" placeholder="09.06.2014" /><br>
+			
+			<table>
+			<tr>
+				<td>12+</td>
+				<td>2-12</td>
+				<td>0-2</td>
+			</tr>
+			<tr>
+				<td><input type="number" min="12" max="31" /></td>
+				<td><input type="number" min="2" max="12" /></td>
+				<td><input type="number" min="0" max="2" /></td>
+			</tr>
+			</table>
+		</div>
+		
+		<div class="to">
+		
+			<label for="city">To</label><br>
+			<select name="city">
+			  <option value="Value 1"selected="selected">enter a city</option>
+			  <option value="Value 2">Sofia</option>
+			  <option value="Value 3">Varna</option>
+			  <option value="Value 4">Burgas</option>
+			</select><br><br>
+		
+			<input type="checkbox" id="ch">
+			<label for="ch">Prefer direct</label><br><br>
+			
+			<label for="ti">Time interval</label><br>
+			<input type="text" id="ti" placeholder="00:20" />
+			<input type="text" id="ti" placeholder="05:00" /><br><br>
+			
+			<label for="ti">Time interval</label><br>
+			<input type="text" id="ti" placeholder="16:00" />
+			<input type="text" id="ti" placeholder="22:00" /><br><br>
+			
+			<label for="class">Chose class</label><br>
+			<select name="class">
+			  <option value="Value 1"selected="selected">Economy Class</option>
+			  <option value="Value 2">First class</option>
+			  <option value="Value 3">Business class</option>
+			</select><br>
+			<input type="submit" value="Login" /><br><br>
+		</div>
+	</div>
+</body>

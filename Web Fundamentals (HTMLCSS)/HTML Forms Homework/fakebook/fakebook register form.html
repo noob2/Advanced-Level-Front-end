@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+		
+	<img src="fakebook.jpg"/>
+		<h2>Registration</h2>
+		<h3>It is safe and it will always be!</h3>
+		
+		<div id="ni">
+			
+		</div>
+	<form>	
+		<div id="ni">
+			<fieldset>
+			<legend>None-Important Information</legend>
+			<input type="text" placeholder="First Name"/>
+			<input type="text" placeholder="Last Name"/><br/>
+			<input type="email" required="true" placeholder="Your email"/>
+			<input type="tel" required="true"  placeholder="Phone number"/><br/>
+			<input type="text" placeholder="Your password"/>
+			<input type="text" placeholder="Website"/><br/>
+			Birthday<br/>
+			<input name="startDate" type="date" /><br/>
+
+			<input type="radio" name="gender" value="Female">Female</input>
+			<input type="radio" name="gender" value="Male"/>Male
+			<input type="radio" name="gender" value="Other"/>Other<br/>
+
+			</fieldset>
+			
+			<input type="reset" />
+		</div>
+		
+		<div id="ii">
+			<fieldset>
+			<legend>Important Information *required</legend>
+			<select name="city" required>
+			  <option value="" disabled selected>Country</option>
+			  <option value="Value 1">Bulgaria</option>
+			  <option value="Value 2">Romania</option>
+			  <option value="Value 3">India</option>
+			  <option value="Value 4">ISIC</option>
+			</select>
+			
+			<input type="text" placeholder="Village" required/>
+
+			<input type="text" placeholder="District" required/><br/>
+			<div id="short">
+				<input type="text" placeholder="Street" required/>
+				<input type="text" placeholder="Nr" required/>
+				<input type="text" placeholder="Floor" required/>
+				<input type="text" placeholder="Ap Nr" required/>
+			</div>
+			
+			Door Colour<br/>
+			<input name="backgroundColor" type="color"required/>
+			<input type="text" placeholder="Water Meter Nr" required/>
+			<select name="city" required>
+			  <option value="" disabled selected>Aunt Panties' Size</option>
+			  <option value="Value 1">2</option>
+			  <option value="Value 2">3</option>
+			  <option value="Value 3">4</option>
+			  <option value="Value 4">5</option>
+			</select><br/>
+			<textarea placeholder="Give Us More Information !!!" required></textarea><br/>
+			</fieldset>
+			<input type="submit" value="Register" />
+		</div>
+	</form>
+	</div>
+</body>

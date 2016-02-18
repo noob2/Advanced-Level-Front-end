@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Looney Tunes Tilt BT';
+    src: url('../fonts/Looney Tunes Tilt BT.ttf') format('truetype');
+}
+
+body {
+	#wrapper {
+		main {
+			display: flex;
+            justify-content: center;
+            background-color: #3F5C93;
+            border: 3px solid #e6e6e6;
+            border-radius: 10px;
+            height: auto;
+            margin-top: 10px;
+		
+			#form {
+				background-color: #CE0000;	
+	            margin: 10px 10px;
+	            border-radius: 10px;
+	            border: 1px solid #e6e6e6;
+	            box-shadow: 10px 10px 10px #000;
+	            width: 95%;
+	            display: inline-block;
+	            padding: 10px;
+				
+	            header {
+	            	margin: 10px 0 5px 0;
+                    color: white;
+                    text-shadow: 1px 1px 10px blue;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+
+                    h3 {
+                        font-family: Looney Tunes Tilt BT;
+                        text-align: left;
+                    }
+	            }
+
+	            p {
+					font-family: Looney Tunes Tilt BT;
+					color: white;
+					text-shadow: 1px 1px 10px blue;
+					font-weight: bold;
+					letter-spacing: 1px;
+	            }
+
+	            form {
+					margin-top: 10px;
+					padding: 10px;
+					border: 1px solid #e6e6e6;
+					border-radius: 10px;
+					box-shadow: 10px 10px 10px #000;
+					width: 350px;
+					
+					input[type="text"] {
+						margin-bottom: 10px;
+						border-radius: 3px;
+					}
+
+					textarea {
+						width: 320px;
+						height: 120px;
+						border-radius: 3px;
+					}
+
+					input[type="button"] {
+						border-radius: 3px;
+						width: 100px;
+                        background-color:aquamarine;
+					}
+
+	            }
+			}
+			
+			#directions {
+				background-color: #CE0000;	
+	            margin: 10px 10px;
+	            border-radius: 10px;
+	            border: 1px solid #e6e6e6;
+				display: inline-block;
+				width: 95%;
+				box-shadow: 10px 10px 10px #000;
+				padding: 10px;
+	            header {
+	            	h3 {
+	            		font-family: Looney Tunes Tilt BT;
+	            		color: white;
+						text-shadow: 1px 1px 10px blue;
+						font-weight: bold;
+						letter-spacing: 1px;
+						float: left;
+						margin: 10px;
+	            	}
+	            }
+
+                ul{
+                    li{
+
+                        font-family: Looney Tunes Tilt BT;
+                        font-size:0.8em;
+	            		color: white;
+
+						text-shadow: 1px 1px 10px blue;
+						font-weight: bold;
+						letter-spacing: 1px;
+						float: left;
+						margin: 10px;
+
+                        
+                    }
+                }
+                p{
+                    font-family: Looney Tunes Tilt BT;
+                        font-size:0.8em;
+	            		color: white;
+                }
+			}
+		}
+	}
+}

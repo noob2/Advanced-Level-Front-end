@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "styles/Sass-style.css",
+    "inputFile": "styles/Sass-style.scss"
+  },
+  {
+    "outputFile": "styles/header-style.css",
+    "inputFile": "styles/header-style.scss"
+  },
+  {
+    "outputFile": "styles/index-main-style.css",
+    "inputFile": "styles/index-main-style.scss"
+  },
+  {
+    "outputFile": "styles/footer-style.css",
+    "inputFile": "styles/footer-style.scss"
+  },
+  {
+    "outputFile": "styles/trainers-main-style.css",
+    "inputFile": "styles/trainers-main-style.scss"
+  },
+  {
+    "outputFile": "styles/learning-plan-main-style.css",
+    "inputFile": "styles/learning-plan-main-style.scss"
+  }
+]

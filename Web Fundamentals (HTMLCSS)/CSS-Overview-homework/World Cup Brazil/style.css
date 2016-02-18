@@ -1,0 +1,106 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    background-color: #009933;
+}
+
+table{
+	border-spacing: 0px;
+	text-align: center;
+}
+
+thead{
+	background-color:orange;
+	font-weight: bold;
+	font-size:25px;
+}
+tbody{
+	background-color:white;
+	font-weight: bold;
+}
+
+td{
+	border: 1px solid black;
+}
+
+tr td:nth-child(1) {
+   text-align: right;
+}
+
+tr td:nth-child(3) {
+   text-align: left;
+}
+
+tr:nth-child(even){
+	background-color:gray;
+}
+
+select{
+	background-color:gray;
+	color: red;
+	height: 30px
+}
+
+select.new{
+	background-color:white;
+	color: green;
+}
+
+#selector{}
+
+#brasil p:after {
+    content: url('bra.png');  
+}
+#mexico p:before {
+    content: url('mex.png');  
+}
+#spain p:after {
+    content: url('esp.png');  
+}
+#netherlands p:before {
+    content: url('net.png');  
+}
+#italy p:after {
+    content: url('ita.png');  
+}
+#england p:before {
+    content: url('eng.png');  
+}
+#argentina p:after {
+    content: url('arg.png');  
+}
+#bosnia p:before {
+    content: url('bos.png');  
+}
+#germany p:after {
+    content: url('ger.png');  
+}
+#portugal p:before {
+    content: url('por.png');  
+}
+
+#bet1 {
+    content: url('BET1.png');  
+	position:middle;
+}
+
+#bet2 {
+    content: url('BET2.png');  
+	position:middle;
+}
+
+.top-left{
+	 border-radius: 20px 0 0 0;
+ }
+
+ .top-right{
+	 border-radius: 0 20px 0 0;
+ }
+ 
+ .bottom-right{
+	 border-radius: 0 0 20px 0;
+ }
+ 
+ .bottom-left{
+	 border-radius: 0 0 0 20px;
+ }

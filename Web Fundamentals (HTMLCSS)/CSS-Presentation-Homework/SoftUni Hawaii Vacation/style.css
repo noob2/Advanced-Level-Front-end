@@ -1,0 +1,72 @@
+body{
+	background-image: url('HawaiiBackground.png');
+	background-size: 100% auto;
+	height: 100%;
+    width: 100%;
+    
+}
+html {
+    height: 100%;
+	background: -moz-radial-gradient(15% 30%,white 10%,#3399ff 40%);
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+	 font-family: 'Animated'; /*a name to be used later*/
+    src: url('Animated.ttf'); /*URL to font*/
+	color:orange;
+	font-size:2.5em;
+	position:absolute;
+	top:3%;
+	right:3%;
+}
+
+.vladoghula{
+	position: absolute;
+	width:22%;
+	height:50%;
+	top: 48%;
+    left: 5%;
+}
+
+.petia{
+	position: absolute;
+	width:22%;
+	height:50%;
+	top: 42%;
+    left: 17%;
+}
+
+.tedihula{
+	position: absolute;
+	width:15%;
+	height:35%;
+	top: 65%;
+    left: 25%;
+}
+
+.nakov{
+	position: absolute;
+	width:18%;
+	height:50%;
+	top: 42%;
+    left: 43%;
+}
+.alex{
+	position: absolute;
+	width:18%;
+	height:50%;
+	top: 49%;
+    left: 50%;
+}
+.vlado{
+	position: absolute;
+	width:18%;
+	height:50%;
+	top: 47%;
+    left: 64%;
+}

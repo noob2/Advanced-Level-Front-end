@@ -1,0 +1,52 @@
+#wrapper{
+	width:850px;
+	margin: 0 auto;
+}
+#laptops{
+	display: inline-block;
+	width:670px;
+}
+#sliders{
+	display: inline-block;
+	vertical-align:top;
+	width:133px;
+}
+#slider > header{
+	text-align:center;
+	font-size:1.5em;
+}
+#slider > p:nth-child(2){
+	display: inline-block;
+}
+#slider > p:nth-child(3){
+	float:right;
+}
+
+#laptop{
+	border:solid;
+	border-color:#EEE;
+	border-radius:3px;
+	display: inline-block;
+	margin:3px;
+}
+#laptop:hover{
+	border:solid;
+	border-color:red;
+	background-color:gray;
+}
+#laptop > header{
+	font-weight:bold;
+}
+#laptop > img{
+	width:200px;
+	height:120px;
+}
+#price{
+	display: block;
+    margin-left:125px;
+	width:70px;
+	background-color:blue;
+	border-top-left-radius:5px;
+	padding:5px;
+	color:white;
+}

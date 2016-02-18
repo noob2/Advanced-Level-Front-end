@@ -1,0 +1,96 @@
+﻿@font-face {
+    font-family: 'Looney Tunes Tilt BT';
+    src: url('../fonts/Looney Tunes Tilt BT.ttf') format('truetype');
+}
+
+body {
+    #wrapper {
+
+        main {
+            display: flex;
+            justify-content: center;
+            background-color: #3F5C93;
+            border: 3px solid #e6e6e6;
+            border-radius: 10px;
+            height: auto;
+            margin-top: 10px;
+
+            .trainers-container {
+                height: 58%;
+                width: 98%;
+
+                .trainers {
+                    width: 99%;
+                    height: 80%;
+                    background-color: #CE0000;
+                    margin: 10px auto;
+                    border-radius: 10px;
+                    border: 1px solid #e6e6e6;
+                    box-shadow: 10px 10px 10px #000;
+                    margin: 1%;
+                    display: flex;
+                    padding-bottom: 10px;
+
+                    img {
+                        height: 230px;
+                        max-width: 200px;
+                        margin: 2%;
+                        border-radius: 15px;
+                        border: 3px solid #fff;
+                    }
+
+                    .block {
+                        width: 90%;
+                        height: 90%;
+                        padding-bottom: 10px;
+
+                        header {
+                            margin: 10px 0 5px 0;
+                            color: white;
+                            text-align: center;
+                            text-shadow: 1px 1px 10px blue;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+
+                            h3 {
+                                font-family: Looney Tunes Tilt BT;
+                            }
+                        }
+
+                        p {
+                            border: 3px solid #FFF;
+                            border-radius: 15px;
+                            padding: 10px;
+                            width: 87%;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 559px) {
+    body {
+        #wrapper {
+            main {
+                .trainers-container {
+                    .trainers {
+                        display: block;
+                        text-align: center;
+
+                        .block {
+                            width: 99%;
+
+                            p {
+                                text-align: center;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+#wrapper{
+	background-color:pink;
+	float:left;
+}
+#wrapper > header{
+	text-align:center;
+	font-style: italic;
+	font-weight:bold;
+	font-size:1.6em;
+	text-transform: uppercase;
+	font-family:verdana;
+}
+
+.from, .to{
+	vertical-align:top;
+	display: inline-block;
+	margin: 10px;
+}
+label{
+	margin:4px;
+}
+
+input[type=text],input[type=password],select{
+	
+	width:200px;
+	height: 20px;
+	float:left;
+	margin:4px;
+}
+input[type=checkbox]{
+	float:left;
+	margin:4px;
+}
+
+input[type=submit]{
+	width:200px;
+	height: 20px;
+	float:left;
+	margin:4px;
+}
+
+#ti{
+	width:90px;
+}
+
+
+

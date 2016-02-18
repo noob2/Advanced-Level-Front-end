@@ -1,0 +1,192 @@
+﻿@font-face {
+    font-family: 'Looney-Tunes-Tilt-BT';
+    src: url('../fonts/Looney Tunes Tilt BT.ttf');
+}
+
+main {
+    background-color: #3F5C93;
+    border: 3px solid #e6e6e6;
+    border-radius: 10px;
+    height: auto;
+
+    section {
+        width: 96%;
+        background-color: #CE0000;
+        margin: 20px auto;
+        border-radius: 10px;
+        border: 1px solid #e6e6e6;
+        box-shadow: 10px 10px 10px #000;
+        height: 95%;
+        width: 96%;
+
+        header {
+            margin: 10px 0 5px 0;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 10px blue;
+            font-weight: bold;
+            letter-spacing: 1px;
+
+            h2 {
+                font-family: 'Looney-Tunes-Tilt-BT';
+            }
+        }
+
+        h3 {
+            font-family: 'Looney-Tunes-Tilt-BT';
+            margin: 5px;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .small-article {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30%;
+            margin: 10px;
+            padding-bottom: 10px;
+            border: 1px solid white;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            -webkit-transition-property: background-color; /* Safari */
+            -webkit-transition-duration: 1s; /* Safari */
+            transition-property: background-color;
+            transition-duration: 1s;
+
+
+            &:hover {
+                background-color: #23395e;
+            }
+
+            img {
+                width: 90%;
+                border-radius: 18px;
+                margin: 18px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            p {
+                margin-top: 6px;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        .horizontal-article {
+            background-color: cornflowerblue;
+            margin: 10px auto;
+            border-radius: 10px;
+            border: 1px solid #e6e6e6;
+            box-shadow: 10px 10px 10px #000;
+            height: 95%;
+            width: 96%;
+            -webkit-transition-property: background-color; /* Safari */
+            -webkit-transition-duration: 1s; /* Safari */
+            transition-property: background-color;
+            transition-duration: 1s;
+
+            &:hover {
+                background-color: #23395e;
+            }
+
+            img {
+                display: inline-block;
+                vertical-align: central;
+                width: 25%;
+                margin: 15px;
+                border-radius: 130px;
+            }
+
+            .info-container {
+                display: inline-block;
+                vertical-align: top;
+                width: 70%;
+                text-align: center;
+
+                p {
+                    margin-top: 6px;
+                    text-align: center;
+                    color: white;
+
+                    &:last-child {
+                        vertical-align: bottom;
+                        margin: 0 auto;
+                        color: greenyellow;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body > #wrapper > main > section {
+        .small-article {
+            margin: 7px;
+        }
+
+        .horizontal-article > .info-container {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body > #wrapper > main > section {
+        .small-article {
+            width: 45%;
+            background-color: #23395e;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body > #wrapper > main > section {
+        .small-article {
+            width: 96%;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body > #wrapper > main > section {
+        box-shadow: none;
+        margin: 10px auto;
+
+        .small-article {
+            width: 96%;
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .horizontal-article {
+            box-shadow: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body > #wrapper > main > section {
+        .horizontal-article {
+            p {
+                &:last-child {
+                    text-align: center;
+                }
+            }
+
+            img {
+                vertical-align: central;
+            }
+        }
+    }
+}
