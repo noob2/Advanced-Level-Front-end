@@ -1,40 +1,62 @@
-var c;
+var canvas;
 var ctx;
-var score1;
-var score2;
 
-var WIDTH = 800;
-var HEIGHT = 600;
+const WIDTH = 800;
+const HEIGHT = 800;
 
-var planet = new Planet(1, 2,3, 4, 20);
+var planetArray = [];
 function init() {
-    c = document.getElementById("myCanvas");
-    ctx = c.getContext("2d");
-    score1 = c.getContext("2d");
-    score1.font = "bold 18px Arial";
-    score2 = c.getContext("2d");
-    score2.font = "bold 18px Arial";
+
+    canvas = document.getElementById("myCanvas");
+    ctx = canvas.getContext("2d");
+    canvas.setAttribute('width', WIDTH);
+    canvas.setAttribute('height', HEIGHT);
+    canvas.style.backgroundImage= "url('images/andromeda.jpg')";
+    canvas.addEventListener("click", addPlanet, false);
+
+
+
+    function addPlanet(event) {
+        var x = event.clientX - canvas.offsetLeft;
+        var y = event.clientY - canvas.offsetTop;
+
+        var rad = document.getElementById("radius").value;
+        var mas = document.getElementById("mass").value;
+
+        var radiusParagraph = document.getElementById("numericRadius");
+        var massParagraph = document.getElementById("numericMass");
+
+        if(rad > 0 && mas > 0){
+            planetArray.push(new Planet(x, y, 0, 0, rad, mas * 10));
+
+
+
+            radiusParagraph.innerHTML = rad + ' thousand kilometer';
+            massParagraph.innerHTML = mas + '0 000 000 000 000 000 000 tons';
+        } else {
+            radiusParagraph.innerHTML = 'enter number';
+            massParagraph.innerHTML = 'enter number';
+        }
+
+    }
 
     return setInterval(draw, 10);
 }
 
 function draw() {
     clear();
-    planet.DrawShape();
-    planet.Ubdate();
 
-
-    if (ball.y > HEIGHT) {
-        paddle.points++;
-        ball.x = 268;
-        ball.y = 266;
-    } else if (ball.y < 0) {
-        paddle2.points++;
-        ball.x = 268;
-        ball.y = 266;
+    for (var i = 0; i < planetArray.length; i++) {
+        for (var j = i; j < planetArray.length - 1; j++) {
+            planetArray[i].InteractWithTheOtherPlanets(planetArray[j + 1]);
+        }
     }
-    score1.fillText(paddle.points, 780, 20);
-    score2.fillText(paddle2.points, 780, 590);
+
+    for (var i = 0; i < planetArray.length; i++) {
+
+        planetArray[i].Update();
+        planetArray[i].Draw();
+    }
 }
 
 function clear() {
@@ -42,3 +64,5 @@ function clear() {
 }
 
 init();
+
+//distance = Math.sqrt(Math.abs(planet.x1)*Math.abs(planet.x1) + Math.abs(planet.y1)*Math.abs(planet.y1));
