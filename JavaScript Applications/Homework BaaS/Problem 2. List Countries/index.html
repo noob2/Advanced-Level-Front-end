@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Consuming remote data with JavaScript: Using XHR</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-1.12.1.js"></script>
+</head>
+<body>
+
+<div class="messages">
+    <strong class="message success">
+    </strong>
+    <strong class="message error">
+    </strong>
+</div>
+
+<br>
+<h3>list of countries:</h3>
+<div id="country-container"></div>
+<div id="town-container"></div>
+<div id="control-panel">
+    <h3>country control panel</h3>
+    <label id="add-country">
+        <input type="text" placeholder="new country NAME">
+        <button>Add</button>
+        <br>
+    </label>
+
+    <label id="edit-country">
+        <input type="text" placeholder="country ID">
+        <input type="text" placeholder="new country NAME">
+        <button>Edit</button>
+        <br>
+    </label>
+
+    <label id="delete-country">
+        <input type="text" placeholder="country ID">
+        <button>Delete</button>
+        <br>
+    </label>
+    <h3>town control panel</h3>
+    <label id="add-town">
+        <input type="text" placeholder="new country NAME">
+        <button>Add</button>
+        <br>
+    </label>
+
+    <label id="edit-town">
+        <input type="text" placeholder="country ID">
+        <input type="text" placeholder="new country NAME">
+        <button>Edit</button>
+        <br>
+    </label>
+
+    <label id="delete-town">
+        <input type="text" placeholder="country ID">
+        <button>Delete</button>
+        <br>
+    </label>
+</div>
+<script src="kinvey-libary.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

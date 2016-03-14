@@ -1,0 +1,32 @@
+#wrapper{
+}
+
+div {
+    margin: 3px 3px;
+    display: inline-block;
+    width: 400px;
+    border: solid black 2px;
+    border-radius: 10px;
+    float: left;
+}
+
+div > h3 {
+    text-align: center;
+}
+
+div > input {
+    margin: 5px 5px;
+}
+
+li:hover{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.messages{
+    display: inline-block;
+    width: 400px;
+    float: left;
+    border: solid black 0px;
+    background-color: greenyellow;
+}

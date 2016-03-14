@@ -1,0 +1,25 @@
+<table border="1">
+    <thead>
+    <tr>
+        <td><b>Full Name</b></td>
+        <td><b>Age</b></td>
+        <td><b>Country</b></td>
+    </tr>
+    </thead>
+    <tbody>
+    {{#people}}
+    <tr>
+        <td>{{firstName}} {{lastName}}</td>
+        <td>{{age}}</td>
+        <td>{{country}}</td>
+    </tr>
+    {{/people}}
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">
+            {{footer}}
+        </td>
+    </tr>
+    </tfoot>
+</table>

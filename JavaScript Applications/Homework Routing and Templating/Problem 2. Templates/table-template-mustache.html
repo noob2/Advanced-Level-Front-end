@@ -1,0 +1,25 @@
+<table border="1">
+    <thead>
+    <tr>
+        <td><b>NAME</b></td>
+        <td><b>TITLE</b></td>
+        <td><b>WEBSITE</b></td>
+    </tr>
+    </thead>
+    <tbody>
+    {{#items}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{jobTitle}}</td>
+        <td>{{website}}</td>
+    </tr>
+    {{/items}}
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3">
+            {{footer}}
+        </td>
+    </tr>
+    </tfoot>
+</table>
