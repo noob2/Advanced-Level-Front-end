@@ -1,4 +1,4 @@
-reloadCountries();
+refreshBooks();
 
 //add country
 $('#add-country > button')[0].addEventListener('click',function(){

@@ -10,7 +10,7 @@ $.ajaxSetup({
     }
 });
 
-reloadCountries = function () {
+refreshBooks = function () {
     $.ajax({
         url: countryUrl,
         type: 'GET',
@@ -85,7 +85,7 @@ addCountry = function (name) {
                 .html('' + data.name + ' successfully added')
                 .show()
                 .fadeOut(2000);
-            reloadCountries();
+            refreshBooks();
         },
         error: function (err) {
             $errorMessage
@@ -107,7 +107,7 @@ editCountry = function (data, id) {
                 .html('' + data.name + ' successfully changed')
                 .show()
                 .fadeOut(2000);
-            reloadCountries();
+            refreshBooks();
         },
         error: function (err) {
             $errorMessage
@@ -127,7 +127,7 @@ deleteCountry = function (id) {
                 .html('' + data.name + ' successfully deleted')
                 .show()
                 .fadeOut(2000);
-            reloadCountries();
+            refreshBooks();
         },
         error: function (err) {
             $errorMessage
