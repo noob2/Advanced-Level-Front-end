@@ -1,0 +1,64 @@
+<div class="filter">
+    <label for="category">Get videos by category</label>
+    <input id="category" type="text" ng-model="filterByCategory"/>
+</div>
+
+<div class="filter">
+    <label for="date">Get videos by date</label>
+    <input id="date" type="date" ng-model="filterByDate"/>
+</div>
+
+<div class="filter">
+    <label>Do you want subtitles</label>
+    <input type="radio" value="true" ng-model="filterByHavingSubtitles"/>Yes
+    <input type="radio" value="false" ng-model="filterByHavingSubtitles"/>No
+</div>
+
+<div class="filter">
+    <label>
+        Sort videos
+    </label>
+    <select name="sortVideos" id="sort-videos" ng-model="sortVideos">
+        <option value="'title'">By title</option>
+        <option value="'length'">By length</option>
+        <option value="'date'">By date</option>
+        <option value="'subscribers'">By subscribers</option>
+    </select>
+</div>
+
+<div ng-repeat="video in videos
+    | filter: {category:filterByCategory}:true
+    | filter: {date:filterByDate}:false
+    | filter: {haveSubtitles:filterByHavingSubtitles}
+    | orderBy: sortVideos" id="video">
+    <strong>{{video.title}}</strong>
+    <br>
+    <img class="videoImage" ng-src="{{video.pictureUrl}}"/>
+    <br>
+    <p>
+        Length: {{video.length}}
+        <br>
+        Category: {{video.category}}
+        <br>
+        Subscribers: {{video.subscribers}}
+        <br>
+        Date: {{video.date}}
+        <br>
+        Subtitles: {{video.haveSubtitles}}
+    </p>
+
+    <div ng-repeat="comment in video.comments">
+        <p>
+            <b>comment from: {{comment.username}}</b>
+            <br>
+            content: {{comment.content}}
+            <br>
+            date: {{comment.date}}
+            <br>
+            likes: {{comment.likes}}
+            <br>
+            websiteUrl: {{comment.websiteUrl}}
+        </p>
+    </div>
+
+</div>

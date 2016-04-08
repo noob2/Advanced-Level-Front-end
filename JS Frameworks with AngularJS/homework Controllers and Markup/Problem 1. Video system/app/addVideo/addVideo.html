@@ -1,0 +1,12 @@
+<form name="videoUploadForm">
+    <input ng-model="video.title" ng-style="invalidTitle" type="text" required placeholder="video title"/>[*requred*]<br>
+    <input ng-model="video.pictureUrl" ng-style="invalidUrl" type="text" required  placeholder="picture url"/>[*requred*]<br>
+    <input ng-model="video.length" type="text" placeholder="video length"/><br>
+    <input ng-model="video.category" ng-style="invalidCategoy" type="text" required  placeholder="video category"/>[*requred*]<br>
+    <input ng-model="video.subscribers" type="text" placeholder="number of subscribers"/><br>
+    <input ng-model="video.date" type="text" placeholder="date of creation"/><br>
+    <label>have subtitles: </label>
+    <input ng-model="video.haveSubtitles" type="radio" value="true"/>Yes
+    <input ng-model="video.haveSubtitles" type="radio" value="false"/>No<br>
+    <button ng-click="addVideo(video)" ng-disabled="!videoUploadForm.$valid || videoUploadForm.$pending"  ng-class="videoUploadForm.$valid ? 'disabled-button' : 'enabled-button'">Add</button>
+</form>
