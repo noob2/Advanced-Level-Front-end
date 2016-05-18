@@ -26,23 +26,23 @@ var Validator = {
             throw new Error("this is not a date.");
         }
     },
-    validateCourse: function (course){
+    validateCourse: function (course) {
         if (!(course instanceof app.course)) {
             throw new Error("this is not a course.");
         }
     },
-    validateTrainer: function (trainer){
+    validateTrainer: function (trainer) {
         if (!(trainer instanceof app.trainer)) {
             throw new Error("this is not a trainer.");
         }
     },
-    validateEmployee: function (employee){
-        if(!(employee instanceof app.employee)){
+    validateEmployee: function (employee) {
+        if (!(employee instanceof app.employee)) {
             throw new Error("this is not a employee.");
         }
     },
-    validateBool: function (boolValue){
-        if(typeof(boolValue) !== "boolean"){
+    validateBool: function (boolValue) {
+        if (typeof(boolValue) !== "boolean") {
             throw new Error("this is not a boolean value.");
         }
     }
